@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <style>
+        body{
+            background-image:url() ;
+        }
+        .tablee{
+            text-align: center;
+            float: right;
+        }
+        .tre{
+            display: block;
+  background-color: rgb(244, 239, 231);
+  
+  padding-bottom: 10px;
+  width: 1000px;
+  border: 4px solid lightslategray;
+  border-radius: 12px;
+  
+  
+}
+
+h2{
+    text-align: center;
+}
+.submit{
+    text-align: center;
+}
+
+    </style>
+    
+</head>
+<body>
+    
+    <div class="tre"> 
+        <hr>
+    <h2>  Book your appointment</h2><hr>
+    <div class="tablee">
+        <table border="1">
+        <tr><th>Slot</th>
+        <th>Time</th></tr>
+        <tr><td>S1</td>
+        <td>9:30 to 10:30 AM</td></tr>
+        <td>S2</td>
+        <td>10:30 to 11:30 AM</td></tr>
+        <td>S3</td>
+        <td>11:30 to 12:30 PM</td></tr>
+        <td>S4</td>
+        <td>12:30 to 01:30 PM</td></tr>
+        <td>S5</td>
+        <td>02:30 to 03:30 PM</td></tr>
+        <td>S6</td>
+        <td>03:30 to 04:30 AM</td></tr>
+        </table>
+        </div>
+    
+    <p>Location :
+    <select name="Location" id="Location">
+        <option value="Select one">--Select Location--</option>
+        <option value="Ambattur">Ambattur</option>
+        <option value="Avadi">Avadi</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Thiruvallur">Thiruvallur</option>
+    </select></p>
+    <p>Department :
+    <select name="Department" id="Department">
+        <option value="Select one">--Select Department--</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dermatology">Dermatology</option>
+        <option value="Neuro Surgery">Neuro Surgery</option>
+        <option value="Gynaecology">Gynaecology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Pulmonology">Pulmonology</option>
+    </select></p>
+    <p>Patient name :
+    <input type="text" name="Patient" placeholder="Enter Patient name"></p>
+    <p>
+        Gender :
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female
+
+    </p>
+    <p> Mobile No :
+        <input type="number" name="Mobile No"  placeholder="10 digits only">
+
+
+    </p>
+    <p>
+        Patient Email :
+        <input type="email" name="Patient Email" placeholder="abc123@gmail.com">
+    </p>
+<p>Slot :
+    <select name = "Slot" id="Slot">
+        <option value="Select one">--Select Slot--</option>
+        <option value="S1">S1</option>
+        <option value="S2">S2</option>
+        <option value="S3">S3</option>
+        <option value="S4">S4</option>
+        <option value="S5">S5</option>
+        <option value="S6">S6</option>
+
+    </select>
+</select>
+</p>
+<p style="color: red;"><marquee>*You can also book your slot by contacting to the hosipatal toll free number(+91 9876543210)</marquee></p>
+<div class="submit">
+<input type="submit" >
+</div>
+    </div>
+    <h3>*Slot timings</h3>
+    <table border="1">
+        <tr><th>Slot</th>
+        <th>Time</th></tr>
+        <tr><td>S1</td>
+        <td>9:30 to 10:30 AM</td></tr>
+        <td>S2</td>
+        <td>10:30 to 11:30 AM</td></tr>
+        <td>S3</td>
+        <td>11:30 to 12:30 PM</td></tr>
+        <td>S4</td>
+        <td>12:30 to 01:30 PM</td></tr>
+        <td>S5</td>
+        <td>02:30 to 03:30 PM</td></tr>
+        <td>S6</td>
+        <td>03:30 to 04:30 AM</td></tr>
+        </table>
+    
+</body>
+</html>

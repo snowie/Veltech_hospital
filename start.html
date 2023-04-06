@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function display() 
+        {
+                var name =document.forms.RegForm.Name.value;
+                var email =document.forms.RegForm.EMail.value;
+                var phone =document.forms.RegForm.Phn.value;
+             var password =document.forms.RegForm.Password.value;
+                var address =document.forms.RegForm.Address.value;
+    var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  
+    var regPhone=/^\d{10}$/;                                    
+    var regName = /\d+$/g;                              
+                if (name == "" || regName.test(name))  
+                 {
+                    window.alert("Please enter your name properly.");      
+                    name.focus();
+                    return false;
+                }
+                if (email == "" || !regEmail.test(email))
+                 {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                if (address == "")
+                 {
+                    window.alert("Please enter your address.");
+                    address.focus();
+                    return false;
+                }
+                if (email == "" || !regEmail.test(email))
+                 {
+                    window.alert("Please enter a valid e-mail address.");
+                    email.focus();
+                    return false;
+                }
+                if (password == "")
+                 {
+                    alert("Please enter your password");
+                    password.focus();
+                    return false;
+                }
+                if(password.length <6)
+                {
+                    alert("Password should be atleast 6 character long");
+                    password.focus();
+                    return false;
+                }
+if (phone == "" || !regPhone.test(phone)) 
+                {
+                    alert("Please enter valid phone number.");
+                    phone.focus();
+                    return false;
+                }
+                if (what.selectedIndex == -1) {
+                    alert("Please enter your course.");
+                    what.focus();
+                    return false;
+                }
+                return true;
+            }
+    </script>
+
+</head>
+<body>
+    <form name = "RegForm" onsubmit="return display()" method="post">
+    <div class="container">
+  <hr>
+    <h1>Sign up form </h1>
+    <hr>
+    <p><b>Name :</b>
+    <input type="text" name="Name"></p>
+    <p><b>Email id :</b> 
+    <input type="text" name="EMail"></p>
+    <p><b>Password :</b>
+    <input type="password" name = "Password"></p>
+    <p><b>Age :</b>
+    <input type="number" name="Age" ></p>
+    <p><b>DOB</b>
+    <input type ="date" name="DOB" ></p>
+    <p><b>Gender</b>
+    <input type="radio" name = "Gender" value="male">Male
+<input type="radio" name = Gender value="Female">Female</p>
+<p><b>Phone number :</b>
+<input type="number" name="Phn" ></p>
+<p><b>Address :</b><br>
+<textarea name="Address" id="" cols="" rows="" placeholder="Enter your full address"></textarea></p>
+<input type="submit"  value="send" name="Submit" />
+
+                <input type="reset"   value="Reset" name="Reset" /></td></tr>
+    </div> 
+</form>
+</body>
+</html>

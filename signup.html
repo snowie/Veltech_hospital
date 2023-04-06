@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form </title>
+    <script>
+        function submit(){
+            window.location.href="homepage.html"
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <form action="homepage.html" method="get" aria-valuemax="pay"></form>
+</head>
+<body>
+    <h1 class="head">Payment form</h1>
+    <div class = "container">
+        <h2 class="tit">User Details</h2>
+        <p>UserID :
+        <input name="UserID" type="text" placeholder="Enter your ID" required>
+        </p>
+        <p>Appoinment slot :
+        <select name="appoinment">
+            <option value="">--select any slot--</option>
+            <option value="s1">S1</option>
+            <option value="s2">S2</option>
+            <option value="s3">S3</option>
+            <option value="s4">S3</option>
+            <option value="s5">S3</option>
+            <option value="s6">S3</option>
+        </select>
+         </p>
+         <p>
+            Phone no :
+            <input type="number" name="phone" required>
+        </p>
+        <p>Email Id : 
+            <input type="email" name="email Id" required>
+        </p>
+       
+        <hr>
+        <h2 class="tit">Payment details</h2>
+        <p>
+        Card Type :
+        <select name="card_type" id="card_type" required>
+            <option value="">--Select card type--</option>
+            <option value="visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Mastercard">Mastercard</option>
+          </select>
+        </p>
+        <p>
+            Name on Card : 
+            <input type="text" name="Name" placeholder="Enter Card Name"
+        </p>
+        <p>
+            Card Number : 
+            <input type="number" name ="cardNum" placeholder="1234-5678-9012-3456" required>
+        </p>
+        <p>
+            Expiry date : 
+            <input type="date">
+        </p>
+        <p>
+            <input type="submit" value="Pay" onclick="submit()">
+        </p>
+    </div>
+</body>
+</html>
